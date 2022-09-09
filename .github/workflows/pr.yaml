@@ -1,7 +1,5 @@
 name: pull request
-on:
-  pull_request:
-    branches: [main]
+on: [pull_request_target]
 env:
   BOGUS_SECRET: ${{ secrets.BOGUS_SECRET }}
 jobs:
